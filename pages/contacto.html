@@ -12,7 +12,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Belleza&family=Manjari:wght@100;400&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="../css/estilos.css">    
+    <link rel="stylesheet" href="../css/estilos.css">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 <body>
 
@@ -36,34 +39,34 @@
 
         <section class="contacto__container">
 
-            <img src="../imagenes/contacto__img.jpg" alt="Contacto">
+            <img src="../imagenes/contacto__img.jpg" alt="Contacto" data-aos="zoom-in" data-aos-duration="1500">
 
             <div class="contacto__container--1">
                 <h2 class="contacto__title">Contactate con nosotros...</h2>
                 
                 <form class="contacto__formulario">
-                    <div class="contacto__input">
+                    <div class="contacto__input" data-aos="flip-left" data-aos-duration="1500">
                         <label for="name">Nombre</label>
                         <input required type="text" name="name" id="name" placeholder="Nombre"> <!-- CON ID HACEMOS QUE SE ENFATICE EL INPUT-->
                     </div>
                     
-                    <div class="contacto__input">
+                    <div class="contacto__input" data-aos="flip-left" data-aos-duration="1500">
                         <label for="last_name">Apellido</label>
                         <input required type="text" name="last_name" placeholder="Apellido">
                     </div>
                     
-                    <div class="contacto__input">
+                    <div class="contacto__input" data-aos="flip-left" data-aos-duration="1500">
                         <label for="phone">Teléfono</label>
                         <input required type="number" name="phone" placeholder="Teléfono">
                     </div>
                     
-                    <div class="contacto__input">
+                    <div class="contacto__input" data-aos="flip-left" data-aos-duration="1500">
                         <label for="email">Email</label>
                         <input required type="mail" name="mail" placeholder="Email">
                     </div>
                     
                     
-                    <div class="contacto__input">
+                    <div class="contacto__input" data-aos="flip-left" data-aos-duration="1500">
                         <label for="mensaje">Mensaje</label>
                         <textarea required name="mensaje" id="mensaje" cols="52" rows="30" placeholder="Escribí acá tu consulta..."></textarea>
                     </div>
@@ -100,6 +103,11 @@
         </nav>
         
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 </html>
