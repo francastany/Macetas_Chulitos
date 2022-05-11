@@ -1,0 +1,19 @@
+{
+  "name": "castany-desafio",
+  "version": "1.0.0",
+  "description": "Proyecto Final - Macetas Chulitos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/francastany/Macetas_Chulitos.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/francastany/Macetas_Chulitos/issues"
+  },
+  "homepage": "https://github.com/francastany/Macetas_Chulitos#readme"
+}
