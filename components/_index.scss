@@ -25,10 +25,7 @@ $breakpoints: (
     flex-direction: column;
     text-align: center;  
     h1{
-        color: #f9ffed;
-        font-weight: bold;
-        font-family: 'Belleza', sans-serif;
-        font-size: 80px;
+        @extend .titleprincipal;
         @include media(sm){
             font-size: 4rem;
         }
