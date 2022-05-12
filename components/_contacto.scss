@@ -1,0 +1,91 @@
+.contacto{
+    min-height: 100vh;
+    padding: 50px;
+    padding-top: 100px;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.1),
+        rgba(0,0,0,0.1)
+    )      
+    ,url(../imagenes/fondo_nosotros.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__container{
+        display: flex;
+        background-color: #f9ffed;
+        border-radius: 25px;
+        min-height: 600px;
+        width: 54rem;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        img{
+            height: 600px;
+            width: 50%;
+            border-radius: 25px 0 0 25px;
+        }
+        &--1{
+            width: 50%;
+            .contacto__title{
+                color: #2b3825;
+                font-size: 30px;
+                padding-top: 10px;
+                padding-bottom: 30px;
+                text-align: center;               
+            }
+            .contacto__formulario{
+                display: flex;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+                gap: 20px;    
+                min-height: 400px;
+                .contacto__input{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    input{
+                        font-family: 'Manjari', sans-serif;
+                        height: 25px;
+                        border-radius: 5px;
+                        border: 1px solid #D9D5CF;
+                        padding: 5px;
+                    }
+                    textarea{
+                        max-height: 150px;    
+                        font-family: 'Manjari', sans-serif;
+                        border-radius: 5px;
+                        border: 1px solid #D9D5CF;
+                        padding: 5px;
+                        resize: none;
+                        width: 90%;                    
+                    }
+                }
+                #contacto__submit{
+                    position: absolute;
+                    bottom: 2rem;
+                    input{
+                        background-color: #414b3b;
+                        height: 35px;
+                        width: 80px;
+                        border-radius: 10px;
+                        color: #f9ffed;
+                        border: 1px solid #D9D5CF;
+                        cursor: pointer;
+                        &:hover{
+                            background-color: #f9ffed;
+                            color: #414b3b;
+                            border: 2px solid #414b3b;
+                            transform: translateY(-4px);
+                        }
+                    }
+                }
+            }            
+            
+        }
+    }
+}

@@ -1,0 +1,87 @@
+.diseños{
+    padding-top: 80px;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.1),
+        rgba(0,0,0,0.1)
+    )      
+    ,url(../imagenes/fondo_nosotros.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    &__title{
+        text-align: center;
+        color: white;
+        font-size: 40px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    &__contenedor{
+        display: grid;
+        grid-template-columns: repeat(3, 30%);
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        padding: 1rem;
+        padding-bottom: 50px;
+        &-dis{
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            max-height: 25rem;
+            img{
+                height: 25rem;
+                width: 100%;
+                border-radius: 10px;
+                transition: transform 0.3s;
+                object-fit: cover;
+                &:hover{
+                    transform: scale(1.15);
+                }
+            }
+            p{
+                position: absolute;
+                bottom: 10px;
+                left: 15px;
+                font-weight: bold;
+            }
+        }
+    }
+    &__personalizados{
+        min-height: 9rem;
+        width: 70%;
+        text-align: center;
+        border: 3px solid rgb(233, 233, 233);
+        border-style: dashed;
+        background-color: #D9D5CF;
+        border-radius: 15px;
+        padding: 10px;
+        color: #2b3825;
+        box-shadow:  5px 5px 10px rgba(0, 0, 0, 0.4);
+        h2{
+            padding-bottom: 5px;
+        }
+        h3{
+            padding-bottom: 10px;
+        }
+        p{
+            padding-bottom: 15px
+        }
+        a{
+            color: white;
+            background-color: #2b3825;
+            padding: 8px;
+            border-radius: 5px;
+            font-weight: bold;
+            &:hover{
+                color: #2b3825;
+                background-color: #fff;
+                border: 2px solid #2b3825;
+            }
+        }
+    }
+}
