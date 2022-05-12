@@ -1,3 +1,15 @@
+$breakpoints: (
+    sm : 426px,
+    md : 768px,
+);
+
+@mixin media ($breakpoint) {
+    
+    @media screen and (max-width: map-get($breakpoints, $breakpoint)) {
+        @content;
+    }
+}
+
 header{
     display: flex;
     justify-content: space-between;
@@ -21,8 +33,15 @@ header{
 
         h3{
             font-weight: 400;
-            font-size: 22px
-        }        
+            font-size: 22px;
+            @include media(md){
+                font-size: 20px;
+            }
+        }    
+        @include media(md){
+            flex-direction: row;
+            flex-wrap: nowrap;
+        } 
     }
 
     nav{
@@ -32,13 +51,30 @@ header{
             li:hover{
                 transform: translateY(-1.5px);
                 a{
-                    color: #4f7344;                    
+                    color: #4f7344; 
+                    @include media(md){
+                        padding: 8px;
+                    }                   
                 }
+            }
+            @include media (md){
+                width: 100%;
+                justify-content: space-evenly;
             }
         }
         a{
             font-weight: 400;
             padding-right: 20px;
         }
+        @include media (md){
+            width: 100%;
+        }
+    }
+
+    @include media (md){
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 5px;
     }
 }
