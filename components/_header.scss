@@ -1,0 +1,44 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    min-height: 65px;
+    align-items: center;
+    background-color: #f9ffed;
+    padding: 0 40px;
+    width: 100%;
+    
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    position: fixed;
+    z-index: 10;
+
+    .logo{
+        display: flex;
+        align-items: center;
+
+        &-img{
+            height: 65px;
+        }
+
+        h3{
+            font-weight: 400;
+            font-size: 22px
+        }        
+    }
+
+    nav{
+        ul{
+            display: flex;
+
+            li:hover{
+                transform: translateY(-1.5px);
+                a{
+                    color: #4f7344;                    
+                }
+            }
+        }
+        a{
+            font-weight: 400;
+            padding-right: 20px;
+        }
+    }
+}

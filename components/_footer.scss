@@ -1,0 +1,38 @@
+footer{
+    background-color: #414b3b;
+    height: 240px;
+    text-align: center;
+    color: white;
+    nav{
+        .footer__img{
+            img{
+                height: 100px;
+            }
+        }
+        .footer__nav{
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            li:hover{
+                a{
+                    color: #4f7344;                    
+                }
+            }
+            a{
+                color: white;
+            }
+        }
+        .footer__redes{
+            padding: 15px;
+            padding-top: 30px;
+            img{
+                height: 35px;
+                padding: 0 10px;
+            }
+        }
+        .footer__copy{
+            font-size: 12px;
+            padding-top: 10px;
+        }
+    }
+}
