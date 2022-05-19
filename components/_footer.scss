@@ -1,3 +1,16 @@
+$breakpoints: (
+    xs : 320px,
+    sm : 426px,
+    md : 768px,
+);
+
+@mixin media ($breakpoint) {
+    
+    @media screen and (max-width: map-get($breakpoints, $breakpoint)) {
+        @content;
+    }
+}
+
 footer{
     background-color: #414b3b;
     height: 240px;
@@ -20,6 +33,9 @@ footer{
             }
             a{
                 color: white;
+            }
+            @include media (xs){
+                gap: 15px;
             }
         }
         .footer__redes{
