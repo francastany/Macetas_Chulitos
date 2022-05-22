@@ -28,6 +28,9 @@ $breakpoints: (
         font-size: 40px;
         padding-top: 50px;
         padding-bottom: 25px;
+        @include media(sm){
+            padding-top: 0;
+        }
     }
     &__contenedor{
         padding: 40px;
